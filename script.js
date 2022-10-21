@@ -18,7 +18,6 @@ document.getElementById("submit").addEventListener("click", (event) => {
       console.log(data);
       let lat = data.city.coord.lat;
       let lon = data.city.coord.lon;
-      document.getElementById("current").innerHTML = data.city.coord.lat;
       document.getElementById("cityName").innerHTML = `City: ${data.city.name}`;
       document.getElementById(
         "temp"
@@ -28,5 +27,38 @@ document.getElementById("submit").addEventListener("click", (event) => {
       document.getElementById(
         "wind"
       ).innerHTML = `Wind: ${data.list[0].wind.speed}`;
+      document.getElementById(
+        "cityName1"
+      ).innerHTML = `City: ${data.city.name}`;
+      document.getElementById(
+        "temp1"
+      ).innerHTML = `Temp: ${data.list[1].main.temp}`;
+      document.getElementById("humidity1").innerHTML = `Humidity:
+        ${data.list[1].main.humidity}`;
+      document.getElementById(
+        "wind1"
+      ).innerHTML = `Wind: ${data.list[1].wind.speed}`;
+      document.getElementById(
+        "cityName2"
+      ).innerHTML = `City: ${data.city.name}`;
+      document.getElementById(
+        "temp2"
+      ).innerHTML = `Temp: ${data.list[2].main.temp}`;
+      document.getElementById("humidity2").innerHTML = `Humidity:
+        ${data.list[2].main.humidity}`;
+      document.getElementById(
+        "wind2"
+      ).innerHTML = `Wind: ${data.list[2].wind.speed}`;
+      document.getElementById(
+        "cityName3"
+      ).innerHTML = `City: ${data.city.name}`;
+      document.getElementById(
+        "temp3"
+      ).innerHTML = `Temp: ${data.list[3].main.temp}`;
+      document.getElementById("humidity3").innerHTML = `Humidity:
+        ${data.list[3].main.humidity}`;
+      document.getElementById(
+        "wind3"
+      ).innerHTML = `Wind: ${data.list[3].wind.speed}`;
     });
 });
